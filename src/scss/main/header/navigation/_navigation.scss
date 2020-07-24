@@ -1,0 +1,45 @@
+@import '../../../mixins';
+
+.navbar {
+  @include overflow;
+  @include flex-container(space-between, center);
+  @include padding(0, 0, 0, 67px);
+
+  &__link {
+    @include nav-link;
+
+    &:hover {
+        @include text-white;
+    }
+  }
+
+  &__dropdown {
+    @include overflow;
+
+    &:hover .navbar__dropbtn {
+      @include text-white;
+    }
+
+    &:hover .navbar__dropdown-list {
+      @include display-block;
+    }
+  }
+
+  &__dropbtn {
+    @include nav-link;
+  }
+
+  &__dropdown-list {
+    @include dropdown-list;
+
+    & .navbar__link {
+      @include dropdown-list-link;
+
+      &:hover {
+        @include dropdown-list-link-hover;
+      }
+    }
+  }
+}
+  
+  
