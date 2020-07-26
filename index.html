@@ -18,15 +18,15 @@
 	<!-- CSS Styles -->
     <link rel="stylesheet" href="./public/styles/main.css">
 </head>
-<body>
-    <section class="main">
-		<header class="header">
+<body>  
+	<header class="header">
+		<div class="header__conteiner">
 			<img class="logo" src="public/images/logo.png" alt="logo">
 			<nav class="navbar">
 				<a class="navbar__link" href="#">Главная</a>
 				<a class="navbar__link" href="#">Реферальная программа</a>
 				<div class="navbar__dropdown">
-				  	<div class="navbar__dropbtn">
+					<div class="navbar__dropbtn">
 						Партнеры
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
 					</div>
@@ -37,7 +37,6 @@
 				</div>
 				<a class="navbar__link" href="#">О Форекс</a>
 			</nav>
-
 			<div class="user-menu">
 				<a class="user-menu__search" href="#">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -61,10 +60,29 @@
 					<a class="user-menu__sign user-menu__sign_up" href="#">Регистрация</a>
 				</div>
 			</div>
-		</header>
-		<div class="bg-video">
-
 		</div>
-    </section>
+	</header>	
+	<section class="main__baner">
+	</section>
+	<div class="video-bg">
+		<video class="video-bg__player" autoplay muted loop>
+			<source src="./public/videos/fon2.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="video-bg__overlay">
+		<div class="video-bg__content">
+			<h1 class="video-bg__title">Multi Currency Hadge EA</h1>
+			<p class="video-bg__description">Торговля на Forex автоматически для вас. Просто установите его и забудьте об этом!</p>
+			<div class="sales-button">
+				<a class="sales-button__sales" href="#">
+					Купить программу
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-right" class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path>
+					</svg>
+				</a>
+				<a class="sales-button__download" href="#">Скачать демо версию</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

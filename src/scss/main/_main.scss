@@ -1,12 +1,12 @@
 @import '../mixins';
 
-body {
-    // @include bg-body;
-}
+// body {
+//     // @include bg-body;
+// }
 
-.main {
-    @include bg-body;
-}
+// .main {
+//     @include bg-body;
+// }
 
 @import 'header/header';
-@import 'background-video/bg-video';
+@import 'video-baner/video-baner';
