@@ -9,19 +9,17 @@
 
     &__dropdown {
         @include dropdown;
-        @include padding(0, 82px, 0, 0);
 
         &:hover .user-menu__dropdown-list {
-            display: block;
+            @include display-block;
         }
 
         
     }
     
     &__dropbtn {
-        padding: 5px;
-        padding-left: 25px;
         width: 80px;
+        @include padding(5px, 5px, 5px, 25px);
         @include text-white;
         @include flex-container(space-between, center);
 
@@ -32,20 +30,15 @@
     }
     
     &__dropdown-list {
-        display: none;
-        position: absolute;
         width: 50px;
-        @include text-white;
-
+        @include dropdown-list;
         @include margin(0, 0, 0, 25px);
         @include dropdown-list-link-hover;
     }
 
     &__list-item {
-        color: black;
-        padding: 2px 40px 2px 10px;
-        text-decoration: none;
-        display: block;
+        @include dropdown-list-link;
+        @include padding(2px, 40px, 2px, 10px);
 
         &:hover {
             @include dropdown-list-link-hover;
@@ -53,7 +46,7 @@
     }
 
     &__registration {
-        
+        @include padding(0, 0, 0, 82px);
     }
 
     &__sign {
