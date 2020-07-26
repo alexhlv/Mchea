@@ -21,10 +21,10 @@
     margin: 0 auto;
 }
 
-// @mixin size($width, $height) {
-//     width: $width;
-//     height: $height;
-// }
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
 
 // @mixin min-max-size($width, $height) {
 //     max-width: $width;
@@ -48,12 +48,12 @@
 
 /* indents*/
 
-// @mixin margin($m-top, $m-right, $m-bottom, $m-left) {
-//     margin-top: $m-top;
-//     margin-right: $m-right;
-//     margin-bottom: $m-bottom;
-//     margin-left: $m-left;
-// }
+@mixin margin($m-top, $m-right, $m-bottom, $m-left) {
+    margin-top: $m-top;
+    margin-right: $m-right;
+    margin-bottom: $m-bottom;
+    margin-left: $m-left;
+}
 
 @mixin padding($p-top, $p-right, $p-bottom, $p-left) {
     padding-top: $p-top;
@@ -69,7 +69,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    // font-size: 16px;
     line-height: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
@@ -98,6 +97,16 @@
 
 /* dropdown-list */
 
+@mixin dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 @mixin dropdown-list {
     display: none;
     position: absolute;
@@ -114,7 +123,7 @@
 }
 
 @mixin dropdown-list-link-hover {
-    background-color: inherit;
+    background-color: #fff;
     color: #1bab4c;
 }
 

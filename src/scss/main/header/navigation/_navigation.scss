@@ -27,6 +27,12 @@
 
   &__dropbtn {
     @include nav-link;
+    @include flex-container(space-between, center);
+
+    & svg {
+      @include size(14px, 14px);
+      @include margin(0, 0, 0, 9px);
+    }
   }
 
   &__dropdown-list {
