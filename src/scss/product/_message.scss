@@ -1,0 +1,56 @@
+.message {
+    @include margin(120px, 0, 120px, 0);
+
+    &__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        color: #000000;
+        @include padding(0, 0, 60px, 0);
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: #1bab4c;
+            position: absolute;
+            top: -40px;
+            left: 0;
+        }
+    }
+
+    &__block {
+        @include flex-container(center, flex-start);
+        
+    }
+
+    &__item {
+        min-width: 400px;;
+        border: 1px solid #e0e0e0;
+
+        &:hover {
+            border-top: none;
+            border-bottom: none;
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__logo {
+        @include padding(30px, 0, 0, 30px);
+    }
+
+    &__description {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        @include padding(20px, 0, 30px, 30px);
+    }
+}
+
+
+

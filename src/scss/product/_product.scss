@@ -1,0 +1,8 @@
+@import '../mixins';
+
+.product {
+    @include container;
+
+    @import '../product/offer';
+    @import '../product/message';
+}

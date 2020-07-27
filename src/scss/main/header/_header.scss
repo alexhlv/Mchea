@@ -5,7 +5,7 @@
 
     &__conteiner {
         @include container;
-        @include flex-container(flex-start, center);
+        @include flex-container(space-between, flex-start);
         @include padding(20px, 0, 20px, 0);
     }
 

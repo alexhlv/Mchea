@@ -1,81 +1,62 @@
 @import '../../mixins';
 
+.baner {
+    
+}
+
 .video-bg {
-    height: 720px;
-    position: relative;
-    overflow: hidden;
+    @include video-bg;
 
     &__player {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+        @include video-bg-player;
     }
 
     &__overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        // background-color: rgba(0, 0, 0, 0.3);
+        @include video-bg-overlay;
     }
 
     &__content {
-        margin-top: 272px;
-        margin-left: 200px;
+        @include margin(272px, 0, 0, 200px);
     }
 
     &__title {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 60px;
-        // line-height: 100%;
-        // text-align: center;
-        color: #FFFFFF;
+        @include video-bg-text(60px, #ffffff);
     }
 
     &__description {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        color: #c4c4c4;
+        @include video-bg-text(18px, #c4c4c4);
         @include padding(29px, 0, 60px, 0);
     }
-}
 
-.sales-button {
-    &__sales {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        color: #fff;
-        background-color: #1bab4c;
-        text-decoration: none;
-        box-shadow: 0px 10px 15px rgba(27, 171, 76, 0.25);
-        border-radius: 3px;
-        @include padding(21px, 18px, 21px, 25px);
+    &__block-buttons {
+        
+    }
 
-        & svg {
-            width: 22px;
-            height: 22px;
-            color: #fff;
-            vertical-align: middle;
-            @include margin(0, 0, 0, 20px);
+    &__button {
+        @include button-text;
+
+        &_green {
+            @include button-green;
+            @include padding(21px, 18px, 21px, 25px);
+
+            &:hover {
+                @include button-green-hover;
+            }
+    
+            & svg {
+                @include button-green-svg;
+                @include margin(0, 0, 0, 20px);
+            }
+        }
+
+        &_default {    
+            @include button-default;
+            @include padding(0, 0, 0, 35px);
+
+            &:hover {
+                @include button-default-hover;
+            }
         }
     }
-
-    &__download {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 100%;
-        color: #c4c4c4;
-        @include padding(0, 0, 0, 35px);
-    }
 }
+
