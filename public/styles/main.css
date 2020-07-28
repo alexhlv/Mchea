@@ -286,6 +286,9 @@ body {
 /* dropdown-list */
 /* button */
 /* box-shadow */
+.baner {
+  position: relative; }
+
 .video-bg {
   height: 720px;
   position: relative;
