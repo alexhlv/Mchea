@@ -1,6 +1,6 @@
 .user-menu {
     @include flex-container(space-between, center);
-    @include padding(0, 0, 0, 91px);
+    @include padding(15px, 0, 0, 91px);
 
     &__search {
         @include size(14px, 14px);
